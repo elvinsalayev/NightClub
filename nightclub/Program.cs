@@ -26,6 +26,7 @@ namespace nightclub
                 }
                 else if (permission == "no")
                 {
+                    Console.ResetColor();
                     human.permission = false;
                 }
                 else
