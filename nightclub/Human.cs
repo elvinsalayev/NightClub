@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace nightclub
 {
@@ -97,14 +98,105 @@ namespace nightclub
         public void Welcome()
         {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("╔╗╔╗╔╦═══╦╗──╔╗──╔═══╦═══╦═╗╔═╦═══╗");
-            Console.WriteLine("║║║║║║╔══╣║──║║──║╔═╗║╔═╗║║╚╝║║╔══╝");
-            Console.WriteLine("║║║║║║╚══╣║──║║──║║─╚╣║─║║╔╗╔╗║╚══╗");
-            Console.WriteLine("║╚╝╚╝║╔══╣║─╔╣║─╔╣║─╔╣║─║║║║║║║╔══╝");
-            Console.WriteLine("╚╗╔╗╔╣╚══╣╚═╝║╚═╝║╚═╝║╚═╝║║║║║║╚══╗");
-            Console.WriteLine(" ╚╝╚╝╚═══╩═══╩═══╩═══╩═══╩╝╚╝╚╩═══╝");
+
+            Console.CursorVisible = false;
+
+            while (true)
+            {
+
+                Console.ForegroundColor = ConsoleColor.Green;
+
+
+                Console.WriteLine(@"               .__                               
+__  _  __ ____ |  |   ____  ____   _____   ____  
+\ \/ \/ // __ \|  | _/ ___\/  _ \ /     \_/ __ \ 
+ \     /\  ___/|  |_\  \__(  <_> )  Y Y  \  ___/ 
+  \/\_/  \___  >____/\___  >____/|__|_|  /\___  >
+             \/          \/            \/     \/ ");
+
+                Thread.Sleep(200);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+
+                Console.WriteLine(@"  __          
+_/  |_  ____  
+\   __\/  _ \ 
+ |  | (  <_> )
+ |__|  \____/ 
+");
+                Thread.Sleep(200);
+                Console.ForegroundColor = ConsoleColor.Blue;
+
+
+                Console.WriteLine(@"  __  .__            
+_/  |_|  |__   ____  
+\   __\  |  \_/ __ \ 
+ |  | |   Y  \  ___/ 
+ |__| |___|  /\___  >
+           \/     \/ ");
+                Thread.Sleep(200);
+
+                Console.ForegroundColor = ConsoleColor.Red;
+
+
+                Console.WriteLine(@"                     __          
+___________ ________/  |_ ___.__.
+\____ \__  \\_  __ \   __<   |  |
+|  |_> > __ \|  | \/|  |  \___  |
+|   __(____  /__|   |__|  / ____|
+|__|       \/             \/     ");
+                Thread.Sleep(200);
+                Console.Clear();
+
+            }
+
+
+            //            string a = @"
+            //╔╗╔╗╔╦═══╦╗──╔╗──╔═══╦═══╦═╗╔═╦═══╗
+            //║║║║║║╔══╣║──║║──║╔═╗║╔═╗║║╚╝║║╔══╝
+            //║║║║║║╚══╣║──║║──║║─╚╣║─║║╔╗╔╗║╚══╗
+            //║╚╝╚╝║╔══╣║─╔╣║─╔╣║─╔╣║─║║║║║║║╔══╝
+            //╚╗╔╗╔╣╚══╣╚═╝║╚═╝║╚═╝║╚═╝║║║║║║╚══╗
+            // ╚╝╚╝╚═══╩═══╩═══╩═══╩═══╩╝╚╝╚╩═══╝";
+            //            Console.CursorVisible = false;
+            //            for (int i = 0; i < 100; i++)
+            //            {
+            //                Console.ResetColor();
+            //                Console.BackgroundColor = ConsoleColor.Green;
+            //                Console.ForegroundColor = ConsoleColor.Black;
+            //                Console.WriteLine(a);
+            //                System.Threading.Thread.Sleep(500);
+
+            //                Console.Clear();
+            //                System.Threading.Thread.Sleep(500);
+
+            //                Console.ResetColor();
+            //                Console.BackgroundColor = ConsoleColor.Black;
+            //                Console.ForegroundColor = ConsoleColor.Green;
+            //                Console.WriteLine(a);
+
+            //                System.Threading.Thread.Sleep(500);
+
+            //                Console.ResetColor();
+
+            //            }
+
+            //while(true)
+            //{ 
+            //    Console.ForegroundColor = ConsoleColor.Green;
+            //    Console.WriteLine("╔╗╔╗╔╦═══╦╗  ╔╗  ╔═══╦═══╦═╗╔═╦═══╗");
+            //    System.Threading.Thread.Sleep(200);
+            //    Console.WriteLine("║║║║║║╔══╣║  ║║  ║╔═╗║╔═╗║║╚╝║║╔══╝");
+            //    System.Threading.Thread.Sleep(200);
+            //    Console.WriteLine("║║║║║║╚══╣║  ║║  ║║ ╚╣║ ║║╔╗╔╗║╚══╗");
+            //    System.Threading.Thread.Sleep(200);
+            //    Console.WriteLine("║╚╝╚╝║╔══╣║ ╔╣║ ╔╣║ ╔╣║ ║║║║║║║╔══╝");
+            //    System.Threading.Thread.Sleep(200);
+            //    Console.WriteLine("╚╗╔╗╔╣╚══╣╚═╝║╚═╝║╚═╝║╚═╝║║║║║║╚══╗");
+            //    System.Threading.Thread.Sleep(200);
+            //    Console.WriteLine(" ╚╝╚╝╚═══╩═══╩═══╩═══╩═══╩╝╚╝╚╩═══╝");
+            //    System.Threading.Thread.Sleep(200);
+            //    Console.Clear();
+            //}
         }
         public void Under18()
         {
@@ -127,4 +219,4 @@ namespace nightclub
         }
 
     }
-} 
+}
